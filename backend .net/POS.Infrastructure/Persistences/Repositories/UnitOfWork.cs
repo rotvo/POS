@@ -9,10 +9,13 @@ namespace POS.Infrastructure.Persistences.Repositories
         private readonly DbFloreria2Context _context;
         public IClientsRepository Clients { get; private set;}
 
+        public IProductosRepository Productos { get; private set; }
+
         public UnitOfWork(DbFloreria2Context context)
         {
             _context = context;
             Clients = new ClientsRepository(_context);
+            Productos = new ProductsRepository(_context);
         }
         public void Dispose()
         {

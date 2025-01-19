@@ -18,6 +18,7 @@ namespace POS.Application.Extensions
             });
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IClientApplication, ClientApplication>();
+            services.AddScoped<IProductFinalApplication, ProductosFinalApplication>();
             return services;
         }
     }

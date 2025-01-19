@@ -6,11 +6,9 @@ public partial class ProductosFinal
 
     public string NombreProducto { get; set; } = null!;
 
-    public bool? EsActivo { get; set; }
-
     public decimal? Costo { get; set; }
 
-    public decimal? Factor { get; set; }
+    public decimal? MargenGanancia { get; set; }
 
     public int? CategoriaId { get; set; }
 

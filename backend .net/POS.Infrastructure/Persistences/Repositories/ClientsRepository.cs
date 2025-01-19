@@ -1,13 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using POS.Domain.Entities;
-using POS.Infrastructure.Commons.Bases.Response;
 using POS.Infrastructure.Persistences.Contexts;
 using POS.Infrastructure.Persistences.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POS.Infrastructure.Persistences.Repositories
 {
@@ -19,10 +13,6 @@ namespace POS.Infrastructure.Persistences.Repositories
         {
             _context = context;
         }
-
-      
-
-       
 
         public  Task<List<Client>> GetAll()
         {

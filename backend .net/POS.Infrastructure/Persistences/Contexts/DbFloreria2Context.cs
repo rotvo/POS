@@ -27,7 +27,7 @@ public partial class DbFloreria2Context : DbContext
 
     public virtual DbSet<Pedido> Pedidos { get; set; }
 
-    public virtual DbSet<ProductosFinal> ProductosFinals { get; set; }
+    public virtual DbSet<ProductosFinal> ProductosFinal { get; set; }
 
     public virtual DbSet<Proveedor> Proveedors { get; set; }
 
